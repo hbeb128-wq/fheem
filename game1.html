@@ -11,18 +11,28 @@
         .main-img { width: 100%; max-height: 400px; object-fit: contain; border-radius: 15px; margin-bottom: 20px; background: #fafafa; }
         h1 { color: #2c3e50; margin-bottom: 15px; }
         .description { font-size: 1.2em; color: #7f8c8d; line-height: 1.6; margin-bottom: 30px; text-align: justify; padding: 0 20px; }
-        .download-btn { 
+        
+        /* تنسيق السعر */
+        .price-box { font-size: 1.5em; color: #e74c3c; font-weight: bold; margin-bottom: 20px; }
+        
+        /* تنسيق زر الواتساب الجديد */
+        .whatsapp-btn { 
             display: inline-block; 
-            background-color: #27ae60; 
+            background-color: #25d366; 
             color: white; 
             padding: 15px 40px; 
             text-decoration: none; 
             border-radius: 50px; 
             font-size: 1.3em; 
             font-weight: bold; 
-            transition: background 0.3s;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
         }
-        .download-btn:hover { background-color: #2ecc71; }
+        .whatsapp-btn:hover { 
+            background-color: #128c7e; 
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(37, 211, 102, 0.4);
+        }
     </style>
 </head>
 <body>
@@ -35,15 +45,18 @@
         <h1>سبع تقنيات لضبط الصف</h1>
         
         <div class="description">
-            المتسلقون - الرادار - المؤقت - السباق - عجلة الحظ - كأس التحدي - الصندوق
-          .
+            المتسلقون - الرادار - المؤقت - السباق - عجلة الحظ - كأس التحدي - الصندوق.
         </div>
 
-        <a href="رابط_التحميل_هنا" class="download-btn">📥 تحميل اللعبة الآن</a>
+        <div class="price-box">السعر: 40 ريال</div>
+
+        <a href="https://wa.me/9665XXXXXXXX?text=السلام%20عليكم%20أستاذ%20حبيب،%20أريد%20شراء%20لعبة%20(سبع%20تقنيات%20لضبط%20الصف)" class="whatsapp-btn">
+            💬 اطلب اللعبة الآن عبر واتساب
+        </a>
     </div>
 
-    <footer style="margin-top: 30px; color: #bdc3c7;">
-        سعرها 40 ريال
+    <footer style="margin-top: 30px; color: #bdc3c7; padding-bottom: 30px;">
+        إشراف الأستاذ: حبيب عبد الله الخالدي
     </footer>
 
 </body>
