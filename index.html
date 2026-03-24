@@ -5,109 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>معرض ألعاب فهيم التعليمية</title>
     <style>
-        /* تنسيق الصفحة العام */
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            background-color: #f8f9fa; 
-            margin: 0; 
-            padding: 20px; 
-            text-align: center; 
-        }
-        h1 { color: #2c3e50; margin-bottom: 5px; }
-        .subtitle { color: #7f8c8d; margin-bottom: 30px; font-size: 1.1em; }
-
-        /* حاوية الألعاب (الشبكة) */
-        .games-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-            gap: 25px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
-        /* كرت اللعبة الواحد */
-        .game-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            border: 1px solid #eee;
-        }
-
-        .game-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            border-color: #3498db;
-        }
-
-        /* تنسيق الصورة بناءً على مسمياتك الجديدة */
-        .game-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: contain; /* ليظهر كامل محتوى الصورة */
-            background-color: #fff;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-
-        /* عنوان اللعبة تحت الصورة */
-        .game-title {
-            padding: 15px;
-            font-size: 1.25em;
-            font-weight: bold;
-            color: #2980b9;
-            background-color: #fafafa;
-            border-top: 1px solid #eee;
-        }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background-color: #f8f9fa; margin: 0; padding: 20px; text-align: center; }
+        .games-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1100px; margin: 0 auto; }
+        .game-card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: all 0.3s ease; text-decoration: none; color: inherit; display: block; border: 1px solid #eee; }
+        .game-card:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); border-color: #3498db; }
+        .game-card img { width: 100%; height: 200px; object-fit: contain; background-color: #fff; padding: 10px; box-sizing: border-box; }
+        .game-title { padding: 15px; font-size: 1.25em; font-weight: bold; color: #2980b9; background-color: #fafafa; border-top: 1px solid #eee; }
     </style>
 </head>
 <body>
 
     <h1>🎮 منصة ألعاب "فهيم" التعليمية</h1>
-    <div class="subtitle">مرحباً بكم يا أبطال.. اختر لعبتك المفضلة لتبدأ المرح!</div>
+    <p style="color: #7f8c8d; margin-bottom: 30px;">مرحباً بكم يا أبطال.. اختر لعبتك المفضلة!</p>
 
     <div class="games-grid">
-
         <a href="game1.html" class="game-card">
-            <img src="1.png" alt="اللعبة الأولى">
-            <div class="game-title">لعبة ترتيب الجمل</div>
+            <img src="1.png" alt="اللعبة 1">
+            <div class="game-title">سبع تقنيات لضبط الصف</div>
         </a>
 
         <a href="game2.html" class="game-card">
-            <img src="2.png" alt="اللعبة الثانية">
+            <img src="2.png" alt="اللعبة 2">
             <div class="game-title">تحدي حروف الجر</div>
         </a>
 
         <a href="game3.html" class="game-card">
-            <img src="3.png" alt="اللعبة الثالثة">
+            <img src="3.png" alt="اللعبة 3">
             <div class="game-title">سباق المترادفات</div>
         </a>
 
         <a href="game4.html" class="game-card">
-            <img src="4.png" alt="اللعبة الرابعة">
+            <img src="4.png" alt="اللعبة 4">
             <div class="game-title">لعبة التنوين</div>
         </a>
 
         <a href="game5.html" class="game-card">
-            <img src="5.png" alt="اللعبة الخامسة">
+            <img src="5.png" alt="اللعبة 5">
             <div class="game-title">الأسماء الموصولة</div>
         </a>
 
         <a href="game6.html" class="game-card">
-            <img src="6.png" alt="اللعبة السادسة">
+            <img src="6.png" alt="اللعبة 6">
             <div class="game-title">كنز القواعد</div>
         </a>
-
     </div>
-
-    <footer style="margin-top: 60px; padding: 20px; color: #95a5a6; font-size: 0.9em; border-top: 1px dashed #ccc;">
-        إشراف الأستاذ: <strong>حبيب عبد الله الخالدي</strong>
-        <br>فريق البيضاء التطوعي
-    </footer>
 
 </body>
 </html>
